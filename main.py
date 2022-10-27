@@ -24,7 +24,7 @@ async def create_upload_file(uploaded_file: UploadFile = File(...)):
     with open(file_location, "wb+") as file_object:
         file_object.write(uploaded_file.file.read())
     return {"file_name": uploaded_file.filename}
-
+#update file structure
 x = 'files'
 
 @app.get("/audio")
